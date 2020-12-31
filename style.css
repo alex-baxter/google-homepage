@@ -4,7 +4,7 @@ body {
 
 .headcontainer {
     display: grid;
-    grid-template-columns: 70px 50px auto 50px 70px 40px 70px;
+    grid-template-columns: 70px 50px auto 50px 70px 38px 70px;
     font-size: 20px;
     align-items: center;
 }
@@ -20,8 +20,16 @@ body {
     text-decoration: none;
 }
 
-.wafflebox {
-    margin-bottom: -5px;
+.link:hover {
+    text-decoration: underline;
+}
+
+.imgbox {
+    margin-bottom: -10px;
+}
+
+#waffle {
+    width: 25px;
 }
 
 .maincontain {
@@ -31,43 +39,82 @@ body {
 }
 
 #logobox {
-    padding-top: 80px;
-    padding-bottom: 12px;    
+    padding: 80px 15vw 40px 15vw;
+}
+
+#flexlogo {
+    max-width: 100%;
 }
 
 #formbox {
     margin-bottom: 20px;
     padding: 5px;
-    border: solid rgb(163, 163, 163) 1px;
+    border: solid #dfe1e5 1px;
     border-radius: 20px;
+    width: 70%;
+    max-width: 562px;
+    min-width: 320px;
+    display: flex;
+}
 
+#formbox:hover {
+    box-shadow: 0px 0px 10px #dfe1e5;
 }
 
 #searchbar {
     outline: none;
     border: none;
-    max-width: 600px;
-    min-width: 400px;
+    padding-left: 10px;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+#searchicon {
+    padding: 0px 0px 2px 8px
+}
+
+.button {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #202124;
+    background-color: #f8f9fa;
+    border: 1px #f8f9fa;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 5px #dfe1e5
+}
+
+.button:focus {
+    border: 1px blue;
 }
 
 .bigfoot {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .footbox {
     background-color: #f2f2f2;
     border-top: solid 1px grey;
-    padding: 8px 0px 8px 0px;
+    padding: 8px 0px 8px 20px;
+}
 
+.footchild {
+    
 }
 
 .footlink {
     color: #717179;
-    font-size: 14px;
+    font-size: 13px;
     text-decoration: none;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 0px;
+    line-height: 35px;
 }
 
 .footlink:visited {
@@ -75,10 +122,14 @@ body {
     text-decoration: none;
 }
 
+.footlink:hover {
+    text-decoration: underline;
+}
+
 #countrytxt {
     color: #717179;
     font-size: 20px;
-    padding-left: 15px;
+    padding-left: 0px;
 }
 
 footer {
