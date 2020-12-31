@@ -2,6 +2,5 @@ This is a test project, attempting to recreate the google homepage using some ba
 
 
 snags:
- - scaling below 340px width poor
  - alignment of footer elements
  - make the footer boxes stack differently (green on top)
